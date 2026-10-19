@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
+<defs><linearGradient id="discG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1AA7FF"/><stop offset="1" stop-color="#0B5ED7"/></linearGradient>
+<radialGradient id="discShine" cx=".3" cy=".25" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1AA7FF" stop-opacity="0"/><stop offset=".5" stop-color="#1AA7FF" stop-opacity=".07"/><stop offset="1" stop-color="#1AA7FF" stop-opacity="0"/></linearGradient>
+  <linearGradient id="shimmer" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#2FE0FF"/><stop offset=".45" stop-color="#1AA7FF"/><stop offset=".55" stop-color="#fff"/><stop offset=".65" stop-color="#1AA7FF"/><stop offset="1" stop-color="#4F7BFF"/>
+    <animateTransform attributeName="gradientTransform" type="translate" values="-500 0;600 0" dur="5s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2FE0FF"/><stop offset=".5" stop-color="#1AA7FF"/><stop offset="1" stop-color="#4F7BFF"/></linearGradient>
+  <linearGradient id="brandv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2FE0FF"/><stop offset="1" stop-color="#4F7BFF"/></linearGradient>
+  <radialGradient id="glowA"><stop offset="0" stop-color="#1AA7FF" stop-opacity=".55"/><stop offset="1" stop-color="#1AA7FF" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glowB"><stop offset="0" stop-color="#4F7BFF" stop-opacity=".45"/><stop offset="1" stop-color="#4F7BFF" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="rgba(148,180,255,.10)" stroke-width="1"/></pattern>
+  <linearGradient id="fadeY" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <mask id="gridMask"><rect width="1200" height="640" fill="url(#fadeY)"/></mask>
+  <clipPath id="card"><rect width="1200" height="640" rx="28"/></clipPath>
+</defs>
+<style>
+  text{font-family:'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+  .serif{font-family:Georgia,'Times New Roman',serif;font-style:italic}
+  .mono{font-family:'JetBrains Mono','Cascadia Code',Consolas,'SFMono-Regular',Menlo,monospace}
+  .t{fill:#EAF2FF} .m{fill:#8E9BB3}
+  @keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,24px)}}
+  @keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-36px,-20px)}}
+  @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .ga{animation:drift 14s ease-in-out infinite}
+  .gb{animation:drift2 18s ease-in-out infinite}
+  .r{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+  
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @keyframes scan{from{transform:translateY(0)}to{transform:translateY(880px)}}
+    @keyframes words{0%,16%{transform:translateY(0)}20%,36%{transform:translateY(-36px)}40%,56%{transform:translateY(-72px)}60%,76%{transform:translateY(-108px)}80%,96%{transform:translateY(-144px)}100%{transform:translateY(-180px)}}
+    @keyframes sheen{from{transform:translateX(-600px)}to{transform:translateX(900px)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important;transform:none!important}}
+</style>
+<g clip-path="url(#card)">
+  <rect width="1200" height="640" fill="#070B14"/>
+  <circle class="ga" cx="216" cy="64" r="456" fill="url(#glowA)" opacity=".55"/>
+  <circle class="gb" cx="1080" cy="608" r="408.00000000000006" fill="url(#glowB)" opacity=".5"/>
+  <rect width="1200" height="640" fill="url(#grid)" mask="url(#gridMask)"/>
+  
+  <!-- scanning light -->
+  <rect x="0" y="-120" width="1200" height="120" fill="url(#scan)" style="animation:scan 7s linear infinite"/>
+  <!-- nav bar -->
+  <g class="r" style="animation-delay:.1s">
+    <g>
+    <g><circle cx="70" cy="54" r="13.200000000000001" stroke="url(#brandv)" stroke-width="2.4000000000000004" stroke-dasharray="66 17" stroke-linecap="round" transform="rotate(35 70 54)"/></g>
+    <circle cx="70" cy="54" r="9.200000000000001" fill="url(#discG)"/>
+    <circle cx="70" cy="54" r="9.200000000000001" fill="url(#discShine)"/>
+    <path d="M67.2 48.8 L69.2 48.8 L69.2 57.6 L74.0 57.6 L74.0 59.6 L67.2 59.6 Z" fill="#EAF6FF"/>
+    <path d="M79.6 49.2 L84.0 49.2 L86.4 46.8 L89.2 46.8" stroke="url(#brand)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /><path d="M80.8 54.0 L91.2 54.0" stroke="url(#brand)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /><path d="M79.6 58.8 L84.0 58.8 L86.4 61.2 L89.2 61.2" stroke="url(#brand)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="90.8" cy="46.8" r="1.6" stroke="url(#brand)" stroke-width="1.2000000000000002" fill="#070B14" /><circle cx="92.8" cy="54.0" r="1.6" stroke="url(#brand)" stroke-width="1.2000000000000002" fill="#070B14" /><circle cx="90.8" cy="61.2" r="1.6" stroke="url(#brand)" stroke-width="1.2000000000000002" fill="#070B14" />
+  </g>
+    <text x="98" y="60" font-size="17" font-weight="700" letter-spacing="3" class="t">LEUKODE LABS</text>
+    <text x="640" y="60" font-size="15" class="m">Work</text><text x="732" y="60" font-size="15" class="m">Services</text><text x="824" y="60" font-size="15" class="m">Stack</text><text x="916" y="60" font-size="15" class="m">Principles</text><text x="1008" y="60" font-size="15" class="m">Contact</text>
+  </g>
+  <line x1="40" y1="96" x2="1160" y2="96" stroke="rgba(148,180,255,.12)"/>
+
+  <!-- copy -->
+  <g class="r" style="animation-delay:.35s">
+    <rect x="64" y="146" width="360" height="36" rx="18" fill="rgba(26,167,255,.10)" stroke="rgba(26,167,255,.35)"/>
+    <circle cx="86" cy="164" r="5" fill="#2FE0FF" style="animation:pulse 1.8s ease-in-out infinite"/>
+    <text x="102" y="169" font-size="13" font-weight="600" letter-spacing="2.4" fill="#2FE0FF" class="mono">SOFTWARE STUDIO · KIGALI → GLOBAL</text>
+  </g>
+  <text x="60" y="282" font-size="84" font-weight="800" letter-spacing="-3" class="t r" style="animation-delay:.5s">Building</text>
+  <text x="60" y="372" font-size="84" font-weight="800" letter-spacing="-3" fill="url(#shimmer)" class="r" style="animation-delay:.65s">intelligence</text>
+  <text x="62" y="458" font-size="80" class="serif t r" style="animation-delay:.8s">beyond limits.</text>
+
+  <!-- rotating line -->
+  <g class="r" style="animation-delay:1.05s">
+    <text x="64" y="530" font-size="22" class="m">We design, build and ship</text>
+    <clipPath id="wordclip"><rect x="318" y="504" width="320" height="36"/></clipPath>
+    <g clip-path="url(#wordclip)"><g style="animation:words 12.5s cubic-bezier(.7,0,.2,1) infinite">
+      <text x="324" y="530" font-size="22" font-weight="700" fill="url(#brand)">AI systems</text><text x="324" y="566" font-size="22" font-weight="700" fill="url(#brand)">web platforms</text><text x="324" y="602" font-size="22" font-weight="700" fill="url(#brand)">mobile apps</text><text x="324" y="638" font-size="22" font-weight="700" fill="url(#brand)">desktop software</text><text x="324" y="674" font-size="22" font-weight="700" fill="url(#brand)">automation</text><text x="324" y="710" font-size="22" font-weight="700" fill="url(#brand)">AI systems</text>
+    </g></g>
+  </g>
+
+  <!-- mark -->
+  <g style="animation:fade 1.2s .4s both">
+    <circle cx="930" cy="356" r="190" stroke="rgba(148,180,255,.10)" stroke-dasharray="4 10"><animateTransform attributeName="transform" type="rotate" from="0 930 356" to="360 930 356" dur="60s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="356" r="236" stroke="rgba(148,180,255,.07)"/>
+    <g><animateTransform attributeName="transform" type="rotate" from="0 930 356" to="360 930 356" dur="16s" repeatCount="indefinite"/><circle cx="930" cy="120" r="5" fill="#2FE0FF"/></g>
+    <g><animateTransform attributeName="transform" type="rotate" from="360 930 356" to="0 930 356" dur="26s" repeatCount="indefinite"/><circle cx="1120" cy="356" r="4" fill="#4F7BFF"/></g>
+    <circle cx="930" cy="356" r="120" fill="url(#glowA)" opacity=".7"/>
+    <g>
+    <g><circle cx="905" cy="356" r="99" stroke="url(#brandv)" stroke-width="18" stroke-dasharray="495 127.5" stroke-linecap="round" transform="rotate(35 905 356)"/></g>
+    <circle cx="905" cy="356" r="69" fill="url(#discG)"/>
+    <circle cx="905" cy="356" r="69" fill="url(#discShine)"/>
+    <path d="M884.0 317.0 L899.0 317.0 L899.0 383.0 L935.0 383.0 L935.0 398.0 L884.0 398.0 Z" fill="#EAF6FF"/>
+    <path d="M977.0 320.0 L1010.0 320.0 L1028.0 302.0 L1049.0 302.0" stroke="url(#brand)" stroke-width="13.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="180" stroke-dashoffset="180" style="animation:draw 1.4s 1s cubic-bezier(.6,0,.2,1) forwards"/><path d="M986.0 356.0 L1064.0 356.0" stroke="url(#brand)" stroke-width="13.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="180" stroke-dashoffset="180" style="animation:draw 1.4s 1.25s cubic-bezier(.6,0,.2,1) forwards"/><path d="M977.0 392.0 L1010.0 392.0 L1028.0 410.0 L1049.0 410.0" stroke="url(#brand)" stroke-width="13.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="180" stroke-dashoffset="180" style="animation:draw 1.4s 1.5s cubic-bezier(.6,0,.2,1) forwards"/>
+    <circle cx="1061.0" cy="302.0" r="12" stroke="url(#brand)" stroke-width="9" fill="#070B14" style="animation:fade .4s 2.2s both, pulse 2.6s 3s ease-in-out infinite"/><circle cx="1076.0" cy="356.0" r="12" stroke="url(#brand)" stroke-width="9" fill="#070B14" style="animation:fade .4s 2.45s both, pulse 2.6s 3.4s ease-in-out infinite"/><circle cx="1061.0" cy="410.0" r="12" stroke="url(#brand)" stroke-width="9" fill="#070B14" style="animation:fade .4s 2.7s both, pulse 2.6s 3.8s ease-in-out infinite"/>
+  </g>
+  </g>
+
+  <!-- footer strip -->
+  <g class="r" style="animation-delay:1.3s">
+    <line x1="40" y1="586" x2="1160" y2="586" stroke="rgba(148,180,255,.10)"/>
+    <g transform="translate(64 616)"><rect x="0" y="-10" width="6" height="6" rx="1.5" fill="url(#brand)" transform="rotate(45 3 -7)"/><text x="18" y="0" font-size="14" letter-spacing="1" class="m">Production software</text></g><g transform="translate(349 616)"><rect x="0" y="-10" width="6" height="6" rx="1.5" fill="url(#brand)" transform="rotate(45 3 -7)"/><text x="18" y="0" font-size="14" letter-spacing="1" class="m">AI-native</text></g><g transform="translate(634 616)"><rect x="0" y="-10" width="6" height="6" rx="1.5" fill="url(#brand)" transform="rotate(45 3 -7)"/><text x="18" y="0" font-size="14" letter-spacing="1" class="m">Offline-first</text></g><g transform="translate(919 616)"><rect x="0" y="-10" width="6" height="6" rx="1.5" fill="url(#brand)" transform="rotate(45 3 -7)"/><text x="18" y="0" font-size="14" letter-spacing="1" class="m">Made in Rwanda</text></g>
+  </g>
+</g>
+<rect x=".5" y=".5" width="1199" height="639" rx="27.5" stroke="rgba(148,180,255,.16)"/>
+</svg>

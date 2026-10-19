@@ -1,93 +1,35 @@
 <div align="center">
 
-# LEUKODE LABS
+<a href="https://github.com/leukode-labs"><img src="assets/hero.svg" width="100%" alt="Leukode Labs — Building intelligence beyond limits. Software studio in Kigali, building AI systems, web platforms, mobile apps, desktop software and automation."></a>
 
-<span style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; color: #0E9F5F; font-size: 1.2em;">Building intelligence beyond limits.</span>
+<img src="assets/about.svg" width="100%" alt="What we do: we design, build and ship production software. No fluff. Just execution.">
 
-Software studio · Kigali, Rwanda → Global
+<a href="https://github.com/leukode-labs/maison-stella-releases/releases/latest"><img src="assets/flagship.svg" width="100%" alt="Flagship product: Maison Stella — Gestion. Offline-first business management with invoices, receipts and payment tracking."></a>
 
-[![Status](https://img.shields.io/badge/Status-Active-0A0A0A?style=flat-square)](https://github.com/leukode-labs)
-[![Location](https://img.shields.io/badge/Built_in-Kigali,_Rwanda-0A0A0A?style=flat-square)](https://github.com/leukode-labs)
-[![Focus](https://img.shields.io/badge/Focus-Production_Software-0E9F5F?style=flat-square)](https://github.com/leukode-labs)
+<a href="https://github.com/leukode-labs/maison-stella-releases/releases/latest"><img src="https://img.shields.io/github/v/release/leukode-labs/maison-stella-releases?style=for-the-badge&label=Latest%20release&color=1AA7FF&labelColor=0B1220" alt="Latest release"></a>
+<a href="https://github.com/leukode-labs/maison-stella-releases/releases/latest"><img src="https://img.shields.io/github/downloads/leukode-labs/maison-stella-releases/total?style=for-the-badge&label=Downloads&color=4F7BFF&labelColor=0B1220" alt="Downloads"></a>
 
-</div>
+<img src="assets/services.svg" width="100%" alt="What we build: enterprise digital products, intelligence systems, mobile and desktop apps, automation and APIs.">
 
----
+<img src="assets/stack.svg" width="100%" alt="Technology: React, React Native, Next.js, TypeScript, Expo, Electron, Tauri, Node.js, PostgreSQL, Supabase, Firebase, Convex, Azure and more.">
 
-## What we do
+<img src="assets/work-title.svg" width="100%" alt="Selected work">
 
-We design, build and ship **production software** — AI systems, web and mobile platforms, and automation tools for businesses that need them to actually work. No hype, no buzzwords: if it doesn't create value, we don't build it.
+<table>
+  <tr>
+    <td width="50%"><a href="https://github.com/leukode-labs/System-Commander"><img src="assets/work-system-commander.svg" width="100%" alt="System Commander — AI control for your computer"></a></td>
+    <td width="50%"><a href="https://github.com/leukode-labs/CodiNation"><img src="assets/work-codination.svg" width="100%" alt="CodiNation — a home for builders"></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://github.com/leukode-labs/fluxcast-domains"><img src="assets/work-fluxcast.svg" width="100%" alt="fluxcast domains — free subdomains for developers"></a></td>
+    <td width="50%"><a href="https://github.com/leukode-labs/ngl-troll"><img src="assets/work-spill.svg" width="100%" alt="spill. — anonymous messages, with a twist"></a></td>
+  </tr>
+</table>
 
-We're entrepreneurs, builders and problem-solvers. **No fluff. Just execution.**
+<img src="assets/principles.svg" width="100%" alt="Principles: precision over perfection, execution over ideas, impact over noise, users first always.">
 
----
+<a href="https://github.com/leukode-labs"><img src="assets/contact.svg" width="100%" alt="Got something that needs brains? Let's build it. Open for collaborations, partnerships and custom builds."></a>
 
-## Flagship product
-
-### Maison Stella — Gestion
-
-Business management software for Maison Stella, a services company in Bukavu, DR Congo. The app replaces a manual paper workflow with professional **proforma invoices, invoices and receipts**, plus payment tracking and follow-up on outstanding balances — fully **offline-first** for Windows, with automatic cloud backup and self-updating installers.
-
-[![Dernière version](https://img.shields.io/github/v/release/leukode-labs/maison-stella-releases?style=flat-square&label=Derni%C3%A8re%20version&color=0E9F5F)](https://github.com/leukode-labs/maison-stella-releases/releases/latest)
-[![Téléchargements](https://img.shields.io/github/downloads/leukode-labs/maison-stella-releases/latest/total?style=flat-square&label=T%C3%A9l%C3%A9chargements&color=0A0A0A)](https://github.com/leukode-labs/maison-stella-releases/releases/latest)
-
-[Download the installer →](https://github.com/leukode-labs/maison-stella-releases/releases/latest)
-
----
-
-## What we build
-
-| | |
-|---|---|
-| **Enterprise digital products**<br><span style="color: #8A8A8F; font-weight: 400;">AI-powered web applications, admin systems and business platforms.</span> | **Intelligence systems**<br><span style="color: #8A8A8F; font-weight: 400;">Smart dashboards, real-time data processing, embedded decision support.</span> |
-| **Mobile & desktop apps**<br><span style="color: #8A8A8F; font-weight: 400;">Cross-platform apps and offline-first desktop software with automatic updates.</span> | **Automation & APIs**<br><span style="color: #8A8A8F; font-weight: 400;">Workflow automation, integrations and scalable, production-ready APIs.</span> |
-
-**If it needs brains, speed and precision — we'll build it.**
-
----
-
-## Technology
-
-<div align="center">
-
-**Frontend** — React · React Native · Next.js · TypeScript · Electron
-
-**Backend** — Node.js · PostgreSQL · Supabase · Firebase
-
-**Systems** — Azure · Cloud automation · REST APIs · Offline-first architecture
-
-</div>
-
-The stack evolves. The standards stay high.
-
----
-
-## Principles
-
-<div align="center">
-
-| | | | |
-|---|---|---|---|
-| **Precision over perfection**<br><span style="color: #8A8A8F; font-weight: 400;">Ship functional, iterative solutions.</span> | **Execution over ideas**<br><span style="color: #8A8A8F; font-weight: 400;">Value is in what you build.</span> | **Impact over noise**<br><span style="color: #8A8A8F; font-weight: 400;">Results speak louder than marketing.</span> | **Users first, always**<br><span style="color: #8A8A8F; font-weight: 400;">Build for real problems, real people.</span> |
-
-</div>
-
----
-
-## Connect
-
-<div align="center">
-
-Open for collaborations, partnerships and custom builds.
-
-Reach us directly through GitHub — projects, proposals and enterprise work welcome.
-
-</div>
-
----
-
-<div align="center">
-
-<span style="color: #8A8A8F; font-size: 0.9em;">LEUKODE LABS · <span style="font-style: italic; color: #0E9F5F;">Building intelligence beyond limits.</span> · Made in Rwanda</span>
+<img src="assets/footer.svg" width="100%" alt="Leukode Labs · Building intelligence beyond limits · Made in Rwanda">
 
 </div>
