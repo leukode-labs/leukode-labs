@@ -1,35 +1,33 @@
 <div align="center">
 
-<a href="https://github.com/leukode-labs"><img src="assets/hero.svg" width="100%" alt="Leukode Labs — Building intelligence beyond limits. Software studio in Kigali, building AI systems, web platforms, mobile apps, desktop software and automation."></a>
+<a href="https://leukodelabs.vercel.app/en"><img src="assets/hero.svg" width="100%" alt="Leukode Labs — Engineering comfort through intelligent digital systems."></a>
 
-<img src="assets/about.svg" width="100%" alt="What we do: we design, build and ship production software. No fluff. Just execution.">
+<a href="https://leukodelabs.vercel.app/en"><img src="assets/intro.svg" width="100%" alt="Build a powerful, performance-driven digital presence."></a>
 
-<a href="https://github.com/leukode-labs/maison-stella-releases/releases/latest"><img src="assets/flagship.svg" width="100%" alt="Flagship product: Maison Stella — Gestion. Offline-first business management with invoices, receipts and payment tracking."></a>
+<a href="https://leukodelabs.vercel.app/en/services"><img src="assets/deliver.svg" width="100%" alt="What we deliver: lead generation systems, operational automation, centralized business control and digital presence that converts."></a>
 
-<a href="https://github.com/leukode-labs/maison-stella-releases/releases/latest"><img src="https://img.shields.io/github/v/release/leukode-labs/maison-stella-releases?style=for-the-badge&label=Latest%20release&color=1AA7FF&labelColor=0B1220" alt="Latest release"></a>
-<a href="https://github.com/leukode-labs/maison-stella-releases/releases/latest"><img src="https://img.shields.io/github/downloads/leukode-labs/maison-stella-releases/total?style=for-the-badge&label=Downloads&color=4F7BFF&labelColor=0B1220" alt="Downloads"></a>
+<a href="https://leukodelabs.vercel.app/en/contact"><img src="assets/process.svg" width="100%" alt="A process built for rapid execution: discovery and strategy, design and build, launch and optimize — 2 to 4 weeks from kickoff to launch."></a>
 
-<img src="assets/services.svg" width="100%" alt="What we build: enterprise digital products, intelligence systems, mobile and desktop apps, automation and APIs.">
+<a href="https://github.com/leukode-labs/maison-stella-releases/releases/latest"><img src="assets/work.svg" width="100%" alt="Selected work — flagship product Maison Stella Gestion, offline-first business management with invoices, receipts and payment tracking."></a>
 
-<img src="assets/stack.svg" width="100%" alt="Technology: React, React Native, Next.js, TypeScript, Expo, Electron, Tauri, Node.js, PostgreSQL, Supabase, Firebase, Convex, Azure and more.">
-
-<img src="assets/work-title.svg" width="100%" alt="Selected work">
+<a href="https://github.com/leukode-labs/maison-stella-releases/releases/latest"><img src="https://img.shields.io/github/v/release/leukode-labs/maison-stella-releases?style=for-the-badge&label=Latest%20release&color=00A8FF&labelColor=0A1628" alt="Latest release"></a>
+<a href="https://github.com/leukode-labs/maison-stella-releases/releases/latest"><img src="https://img.shields.io/github/downloads/leukode-labs/maison-stella-releases/total?style=for-the-badge&label=Downloads&color=38BDF8&labelColor=0A1628" alt="Downloads"></a>
 
 <table>
   <tr>
-    <td width="50%"><a href="https://github.com/leukode-labs/System-Commander"><img src="assets/work-system-commander.svg" width="100%" alt="System Commander — AI control for your computer"></a></td>
-    <td width="50%"><a href="https://github.com/leukode-labs/CodiNation"><img src="assets/work-codination.svg" width="100%" alt="CodiNation — a home for builders"></a></td>
+    <td width="50%"><a href="https://github.com/leukode-labs/System-Commander"><img src="assets/project-system-commander.svg" width="100%" alt="System Commander — AI control for your computer"></a></td>
+    <td width="50%"><a href="https://github.com/leukode-labs/CodiNation"><img src="assets/project-codination.svg" width="100%" alt="CodiNation — a home for builders"></a></td>
   </tr>
   <tr>
-    <td width="50%"><a href="https://github.com/leukode-labs/fluxcast-domains"><img src="assets/work-fluxcast.svg" width="100%" alt="fluxcast domains — free subdomains for developers"></a></td>
-    <td width="50%"><a href="https://github.com/leukode-labs/ngl-troll"><img src="assets/work-spill.svg" width="100%" alt="spill. — anonymous messages, with a twist"></a></td>
+    <td width="50%"><a href="https://github.com/leukode-labs/fluxcast-domains"><img src="assets/project-fluxcast.svg" width="100%" alt="fluxcast domains — free subdomains for developers"></a></td>
+    <td width="50%"><a href="https://github.com/leukode-labs/ngl-troll"><img src="assets/project-spill.svg" width="100%" alt="spill. — anonymous messages, with a twist"></a></td>
   </tr>
 </table>
 
-<img src="assets/principles.svg" width="100%" alt="Principles: precision over perfection, execution over ideas, impact over noise, users first always.">
+<a href="https://leukodelabs.vercel.app/en/case-studies"><img src="assets/scale.svg" width="100%" alt="Build once. Scale forever. 2+ years, 10+ projects, 100% satisfied."></a>
 
-<a href="https://github.com/leukode-labs"><img src="assets/contact.svg" width="100%" alt="Got something that needs brains? Let's build it. Open for collaborations, partnerships and custom builds."></a>
+<a href="https://leukodelabs.vercel.app/en/contact"><img src="assets/cta.svg" width="100%" alt="Stop losing money. Start scaling. Book your free 30-minute strategy call."></a>
 
-<img src="assets/footer.svg" width="100%" alt="Leukode Labs · Building intelligence beyond limits · Made in Rwanda">
+<a href="https://leukodelabs.vercel.app/en"><img src="assets/footer.svg" width="100%" alt="Leukode Labs — Engineered for comfort. Built for scale."></a>
 
 </div>

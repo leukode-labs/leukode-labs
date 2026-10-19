@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960" fill="none">
+<defs>
+  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <linearGradient id="brandd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <linearGradient id="cardG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#243B53"/><stop offset="1" stop-color="#0A1628"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#00A8FF" stop-opacity=".35"/><stop offset="1" stop-color="#00A8FF" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" stroke="rgba(0,168,255,.07)"/></pattern>
+  <clipPath id="frame"><rect width="1200" height="960" rx="8"/></clipPath>
+  
+</defs>
+<style>
+  text{font-family:Inter,'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+  .w{fill:#FFFFFF} .g{fill:#D1D5DB} .m{fill:#9CA3AF} .b{fill:#00A8FF} .n{fill:#050B14} .s{fill:#243B53}
+  .cap{font-size:13px;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+  .r{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+  .f{animation:fade 1s ease both}
+  
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#frame)">
+<rect width="1200" height="960" fill="#050B14"/>
+
+  <rect width="1200" height="960" fill="url(#grid)" opacity=".6"/>
+  <circle cx="1080" cy="840" r="380" fill="url(#glow)" opacity=".5"/>
+  <g class="r" style="animation-delay:0s"><rect x="533" y="52" width="134" height="28" rx="3" fill="rgba(0,168,255,.10)" stroke="rgba(0,168,255,.35)"/>
+  <text x="600" y="70.5" font-size="12.5" font-weight="500" text-anchor="middle" class="b">What We Deliver</text></g>
+  <text x="600" y="132" font-size="44" font-weight="700" letter-spacing="-1" text-anchor="middle" class="w r" style="animation-delay:.15s">Not what we build,</text>
+  <text x="600" y="184" font-size="44" font-weight="700" letter-spacing="-1" text-anchor="middle" fill="url(#brand)" class="r" style="animation-delay:.25s">but what you gain</text>
+  <text x="600" y="222" font-size="17" text-anchor="middle" class="m r" style="animation-delay:.35s">We deliver measurable outcomes that transform how your business operates.</text>
+  <line x1="231" y1="294" x2="231" y2="730" stroke="rgba(0,168,255,.25)" stroke-dasharray="3 5"/>
+  <circle cx="231" cy="294" r="3" fill="#00A8FF"><animate attributeName="cy" values="294;730" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite"/></circle>
+  <g class="r" style="animation-delay:0.45s">
+      <rect x="212" y="250" width="38" height="38" rx="2" fill="rgba(0,168,255,.10)" stroke="rgba(0,168,255,.35)"/>
+      <path d="M8 22 L22 8 M12 8h10v10" transform="translate(216 254) scale(1)" stroke="#00A8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="284" y="278" font-size="27" font-weight="700" class="w">Lead Generation Systems</text>
+      <text x="284" y="310" font-size="16.5" class="m">Digital presence that converts visitors into qualified leads automatically.</text>
+      <g transform="translate(284 330)"><rect width="190.8" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">High-converting websites</text></g><g transform="translate(482.8 330)"><rect width="184.1" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Lead capture automation</text></g><g transform="translate(674.9 330)"><rect width="164" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Analytics dashboards</text></g>
+      <g style="animation:float 6s 0s ease-in-out infinite"><path d="M946 294 l34 17 l34 -17 l-34 -17z" fill="#C9CFD8"/><path d="M946 294 v17 l34 17 v-17z" fill="#3B4250"/><path d="M980 311 v17 l34 -17 v-17z" fill="#262C36"/><path d="M898.4 317.8 l34 17 l34 -17 l-34 -17z" fill="#AEB6C2"/><path d="M898.4 317.8 v11.899999999999999 l34 17 v-11.899999999999999z" fill="#3B4250"/><path d="M932.4 334.8 v11.899999999999999 l34 -17 v-11.899999999999999z" fill="#262C36"/><path d="M993.6 317.8 l34 17 l34 -17 l-34 -17z" fill="#AEB6C2"/><path d="M993.6 317.8 v11.899999999999999 l34 17 v-11.899999999999999z" fill="#3B4250"/><path d="M1027.6 334.8 v11.899999999999999 l34 -17 v-11.899999999999999z" fill="#262C36"/><path d="M946 341.6 l34 17 l34 -17 l-34 -17z" fill="#9AA3B0"/><path d="M946 341.6 v8.5 l34 17 v-8.5z" fill="#3B4250"/><path d="M980 358.6 v8.5 l34 -17 v-8.5z" fill="#262C36"/>
+      <rect x="976" y="256.6" width="8" height="20.4" fill="#00A8FF" opacity=".85"><animate attributeName="opacity" values=".3;1;.3" dur="2.4s" repeatCount="indefinite" begin="0s"/></rect></g>
+    </g><g class="r" style="animation-delay:0.6s">
+      <rect x="212" y="410" width="38" height="38" rx="2" fill="rgba(0,168,255,.10)" stroke="rgba(0,168,255,.35)"/>
+      <path d="M9 9a4 4 0 1 1 0 .1M21 21a4 4 0 1 1 0 .1M12 12l6 6" transform="translate(216 414) scale(1)" stroke="#00A8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="284" y="438" font-size="27" font-weight="700" class="w">Operational Automation</text>
+      <text x="284" y="470" font-size="16.5" class="m">Remove repetitive tasks and streamline workflows with intelligent automation.</text>
+      <g transform="translate(284 490)"><rect width="184.1" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Social media automation</text></g><g transform="translate(476.1 490)"><rect width="130.5" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Email workflows</text></g><g transform="translate(614.6 490)"><rect width="157.3" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Process integration</text></g>
+      <g style="animation:float 6s 0.7s ease-in-out infinite"><path d="M946 454 l34 17 l34 -17 l-34 -17z" fill="#C9CFD8"/><path d="M946 454 v17 l34 17 v-17z" fill="#3B4250"/><path d="M980 471 v17 l34 -17 v-17z" fill="#262C36"/><path d="M898.4 477.8 l34 17 l34 -17 l-34 -17z" fill="#AEB6C2"/><path d="M898.4 477.8 v11.899999999999999 l34 17 v-11.899999999999999z" fill="#3B4250"/><path d="M932.4 494.8 v11.899999999999999 l34 -17 v-11.899999999999999z" fill="#262C36"/><path d="M993.6 477.8 l34 17 l34 -17 l-34 -17z" fill="#AEB6C2"/><path d="M993.6 477.8 v11.899999999999999 l34 17 v-11.899999999999999z" fill="#3B4250"/><path d="M1027.6 494.8 v11.899999999999999 l34 -17 v-11.899999999999999z" fill="#262C36"/><path d="M946 501.6 l34 17 l34 -17 l-34 -17z" fill="#9AA3B0"/><path d="M946 501.6 v8.5 l34 17 v-8.5z" fill="#3B4250"/><path d="M980 518.6 v8.5 l34 -17 v-8.5z" fill="#262C36"/>
+      <rect x="976" y="416.6" width="8" height="20.4" fill="#00A8FF" opacity=".85"><animate attributeName="opacity" values=".3;1;.3" dur="2.4s" repeatCount="indefinite" begin="0.7s"/></rect></g>
+    </g><g class="r" style="animation-delay:0.75s">
+      <rect x="212" y="570" width="38" height="38" rx="2" fill="rgba(0,168,255,.10)" stroke="rgba(0,168,255,.35)"/>
+      <path d="M6 6h8v8H6zM16 6h8v8h-8zM6 16h8v8H6zM16 16h8v8h-8z" transform="translate(216 574) scale(1)" stroke="#00A8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="284" y="598" font-size="27" font-weight="700" class="w">Centralized Business Control</text>
+      <text x="284" y="630" font-size="16.5" class="m">See and manage everything from one intelligent dashboard.</text>
+      <g transform="translate(284 650)"><rect width="150.60000000000002" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Custom CRM systems</text></g><g transform="translate(442.6 650)"><rect width="164" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Real-time dashboards</text></g><g transform="translate(614.6 650)"><rect width="157.3" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Data centralization</text></g>
+      <g style="animation:float 6s 1.4s ease-in-out infinite"><path d="M946 614 l34 17 l34 -17 l-34 -17z" fill="#C9CFD8"/><path d="M946 614 v17 l34 17 v-17z" fill="#3B4250"/><path d="M980 631 v17 l34 -17 v-17z" fill="#262C36"/><path d="M898.4 637.8 l34 17 l34 -17 l-34 -17z" fill="#AEB6C2"/><path d="M898.4 637.8 v11.899999999999999 l34 17 v-11.899999999999999z" fill="#3B4250"/><path d="M932.4 654.8 v11.899999999999999 l34 -17 v-11.899999999999999z" fill="#262C36"/><path d="M993.6 637.8 l34 17 l34 -17 l-34 -17z" fill="#AEB6C2"/><path d="M993.6 637.8 v11.899999999999999 l34 17 v-11.899999999999999z" fill="#3B4250"/><path d="M1027.6 654.8 v11.899999999999999 l34 -17 v-11.899999999999999z" fill="#262C36"/><path d="M946 661.6 l34 17 l34 -17 l-34 -17z" fill="#9AA3B0"/><path d="M946 661.6 v8.5 l34 17 v-8.5z" fill="#3B4250"/><path d="M980 678.6 v8.5 l34 -17 v-8.5z" fill="#262C36"/>
+      <rect x="976" y="576.6" width="8" height="20.4" fill="#00A8FF" opacity=".85"><animate attributeName="opacity" values=".3;1;.3" dur="2.4s" repeatCount="indefinite" begin="1.4s"/></rect></g>
+    </g><g class="r" style="animation-delay:0.8999999999999999s">
+      <rect x="212" y="730" width="38" height="38" rx="2" fill="rgba(0,168,255,.10)" stroke="rgba(0,168,255,.35)"/>
+      <path d="M15 5a10 10 0 1 0 .1 0M5 15h20M15 5c4 4 4 16 0 20M15 5c-4 4-4 16 0 20" transform="translate(216 734) scale(1)" stroke="#00A8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="284" y="758" font-size="27" font-weight="700" class="w">Digital Presence That Converts</text>
+      <text x="284" y="790" font-size="16.5" class="m">Premium web and mobile experiences that establish authority and drive action.</text>
+      <g transform="translate(284 810)"><rect width="137.2" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Web applications</text></g><g transform="translate(429.2 810)"><rect width="103.7" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Mobile apps</text></g><g transform="translate(540.9 810)"><rect width="143.9" height="28" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)"/><circle cx="13" cy="14" r="2.5" fill="#00A8FF"/><text x="22" y="18.5" font-size="12" class="g">Brand experiences</text></g>
+      <g style="animation:float 6s 2.0999999999999996s ease-in-out infinite"><path d="M946 774 l34 17 l34 -17 l-34 -17z" fill="#C9CFD8"/><path d="M946 774 v17 l34 17 v-17z" fill="#3B4250"/><path d="M980 791 v17 l34 -17 v-17z" fill="#262C36"/><path d="M898.4 797.8 l34 17 l34 -17 l-34 -17z" fill="#AEB6C2"/><path d="M898.4 797.8 v11.899999999999999 l34 17 v-11.899999999999999z" fill="#3B4250"/><path d="M932.4 814.8 v11.899999999999999 l34 -17 v-11.899999999999999z" fill="#262C36"/><path d="M993.6 797.8 l34 17 l34 -17 l-34 -17z" fill="#AEB6C2"/><path d="M993.6 797.8 v11.899999999999999 l34 17 v-11.899999999999999z" fill="#3B4250"/><path d="M1027.6 814.8 v11.899999999999999 l34 -17 v-11.899999999999999z" fill="#262C36"/><path d="M946 821.6 l34 17 l34 -17 l-34 -17z" fill="#9AA3B0"/><path d="M946 821.6 v8.5 l34 17 v-8.5z" fill="#3B4250"/><path d="M980 838.6 v8.5 l34 -17 v-8.5z" fill="#262C36"/>
+      <rect x="976" y="736.6" width="8" height="20.4" fill="#00A8FF" opacity=".85"><animate attributeName="opacity" values=".3;1;.3" dur="2.4s" repeatCount="indefinite" begin="2.0999999999999996s"/></rect></g>
+    </g>
+  <g class="r" style="animation-delay:1.1s"><rect x="508" y="888" width="184" height="40" rx="2" stroke="#00A8FF" stroke-width="1.5"/><text x="600" y="914" font-size="14.5" font-weight="600" text-anchor="middle" class="b">Explore Our Services  →</text></g>
+</g>
+</svg>

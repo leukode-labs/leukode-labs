@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" fill="none">
+<defs>
+  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <linearGradient id="brandd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <linearGradient id="cardG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#243B53"/><stop offset="1" stop-color="#0A1628"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#00A8FF" stop-opacity=".35"/><stop offset="1" stop-color="#00A8FF" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" stroke="rgba(0,168,255,.07)"/></pattern>
+  <clipPath id="frame"><rect width="1200" height="470" rx="8"/></clipPath>
+  <linearGradient id="bandG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A1628"/><stop offset="1" stop-color="#050B14"/></linearGradient>
+</defs>
+<style>
+  text{font-family:Inter,'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+  .w{fill:#FFFFFF} .g{fill:#D1D5DB} .m{fill:#9CA3AF} .b{fill:#00A8FF} .n{fill:#050B14} .s{fill:#243B53}
+  .cap{font-size:13px;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+  .r{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+  .f{animation:fade 1s ease both}
+  
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#frame)">
+<rect width="1200" height="470" fill="#050B14"/>
+
+  <rect width="1200" height="470" fill="url(#bandG)"/>
+  <rect width="1200" height="470" fill="url(#grid)" opacity=".5"/>
+  <text x="600" y="140" font-size="74" font-weight="700" letter-spacing="-2" text-anchor="middle" class="w r" style="animation-delay:.1s">Build Once.</text>
+  <text x="600" y="222" font-size="74" font-weight="700" letter-spacing="-2" text-anchor="middle" fill="url(#brand)" class="r" style="animation-delay:.25s">Scale Forever.</text>
+  <text x="600" y="272" font-size="22" text-anchor="middle" class="m r" style="animation-delay:.4s">Automation that grows with you.</text>
+  <g class="r" style="animation-delay:0.55s">
+      <rect x="281" y="314" width="38" height="38" rx="3" fill="rgba(0,168,255,.10)" stroke="rgba(0,168,255,.35)"/>
+      <path d="M10 22 L22 10 M14 10h8v8" transform="translate(284 317)" stroke="#00A8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="300" y="408" font-size="44" font-weight="800" text-anchor="middle" fill="url(#brand)">2+</text>
+      <text x="300" y="436" font-size="13" class="cap m" text-anchor="middle">Years</text></g><g class="r" style="animation-delay:0.7000000000000001s">
+      <rect x="581" y="314" width="38" height="38" rx="3" fill="rgba(0,168,255,.10)" stroke="rgba(0,168,255,.35)"/>
+      <path d="M17 6 L10 18h7l-2 8 9 -13h-7z" transform="translate(584 317)" stroke="#00A8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="600" y="408" font-size="44" font-weight="800" text-anchor="middle" fill="url(#brand)">10+</text>
+      <text x="600" y="436" font-size="13" class="cap m" text-anchor="middle">Projects</text></g><g class="r" style="animation-delay:0.8500000000000001s">
+      <rect x="881" y="314" width="38" height="38" rx="3" fill="rgba(0,168,255,.10)" stroke="rgba(0,168,255,.35)"/>
+      <path d="M8 22l6-6 4 4 8-8M20 12h6v6" transform="translate(884 317)" stroke="#00A8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="900" y="408" font-size="44" font-weight="800" text-anchor="middle" fill="url(#brand)">100%</text>
+      <text x="900" y="436" font-size="13" class="cap m" text-anchor="middle">Satisfied</text></g>
+</g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="372" viewBox="0 0 580 372" fill="none">
+<defs>
+  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <linearGradient id="brandd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <linearGradient id="cardG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#243B53"/><stop offset="1" stop-color="#0A1628"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#00A8FF" stop-opacity=".35"/><stop offset="1" stop-color="#00A8FF" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" stroke="rgba(0,168,255,.07)"/></pattern>
+  <clipPath id="frame"><rect width="580" height="372" rx="8"/></clipPath>
+  
+</defs>
+<style>
+  text{font-family:Inter,'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+  .w{fill:#FFFFFF} .g{fill:#D1D5DB} .m{fill:#9CA3AF} .b{fill:#00A8FF} .n{fill:#050B14} .s{fill:#243B53}
+  .cap{font-size:13px;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+  .r{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+  .f{animation:fade 1s ease both}
+  
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#frame)">
+<rect width="580" height="372" fill="#050B14"/>
+
+  <rect width="580" height="372" fill="#0A1628"/>
+  <rect width="580" height="190" fill="url(#cardG)"/>
+  <g><g style="animation:float 6s 0s ease-in-out infinite"><rect x="24" y="26" width="167.33333333333334" height="138" rx="3" fill="#16263F"/><circle cx="44" cy="48" r="9" fill="#00A8FF" opacity=".7"/><rect x="60" y="43" width="60" height="7" rx="2" fill="#2A3D5A"/><rect x="34" y="70" width="147.33333333333334" height="56" rx="3" fill="#1D3150"/><rect x="34" y="136" width="70" height="7" rx="2" fill="#2A3D5A"/></g><g style="animation:float 6s 1s ease-in-out infinite"><rect x="201.33333333333334" y="26" width="167.33333333333334" height="138" rx="3" fill="#16263F"/><circle cx="221.33333333333334" cy="48" r="9" fill="#00A8FF" opacity=".7"/><rect x="237.33333333333334" y="43" width="60" height="7" rx="2" fill="#2A3D5A"/><rect x="211.33333333333334" y="70" width="147.33333333333334" height="56" rx="3" fill="#1D3150"/><rect x="211.33333333333334" y="136" width="70" height="7" rx="2" fill="#2A3D5A"/></g><g style="animation:float 6s 2s ease-in-out infinite"><rect x="378.6666666666667" y="26" width="167.33333333333334" height="138" rx="3" fill="#16263F"/><circle cx="398.6666666666667" cy="48" r="9" fill="#00A8FF" opacity=".7"/><rect x="414.6666666666667" y="43" width="60" height="7" rx="2" fill="#2A3D5A"/><rect x="388.6666666666667" y="70" width="147.33333333333334" height="56" rx="3" fill="#1D3150"/><rect x="388.6666666666667" y="136" width="70" height="7" rx="2" fill="#2A3D5A"/></g></g>
+  <rect x="28" y="212" width="144" height="24" rx="2" fill="rgba(0,168,255,.10)" stroke="rgba(0,168,255,.35)"/>
+  <text x="37" y="228.5" font-size="11.5" font-weight="600" class="b">Community Platform</text>
+  <text x="28" y="274" font-size="25" font-weight="700" class="w">CodiNation</text>
+  <text x="28" y="304" font-size="15" class="m">A home for builders working with code, design and AI.</text>
+  <g transform="translate(28 326)"><rect width="90" height="24" rx="2" fill="#16263F"/><text x="8" y="16.5" font-size="12" class="g">TypeScript</text></g><g transform="translate(126 326)"><rect width="82.60000000000001" height="24" rx="2" fill="#16263F"/><text x="8" y="16.5" font-size="12" class="g">Community</text></g><g transform="translate(216.60000000000002 326)"><rect width="38.2" height="24" rx="2" fill="#16263F"/><text x="8" y="16.5" font-size="12" class="g">Web</text></g>
+  <text x="552" y="343" font-size="14" font-weight="600" text-anchor="end" class="b">View repository ↗</text>
+  <rect x=".5" y=".5" width="579" height="371" rx="7.5" stroke="rgba(255,255,255,.10)"/>
+</g>
+</svg>

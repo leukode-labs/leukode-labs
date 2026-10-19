@@ -1,105 +1,140 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
-<defs><linearGradient id="discG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1AA7FF"/><stop offset="1" stop-color="#0B5ED7"/></linearGradient>
-<radialGradient id="discShine" cx=".3" cy=".25" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/></radialGradient>
-  <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1AA7FF" stop-opacity="0"/><stop offset=".5" stop-color="#1AA7FF" stop-opacity=".07"/><stop offset="1" stop-color="#1AA7FF" stop-opacity="0"/></linearGradient>
-  <linearGradient id="shimmer" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#2FE0FF"/><stop offset=".45" stop-color="#1AA7FF"/><stop offset=".55" stop-color="#fff"/><stop offset=".65" stop-color="#1AA7FF"/><stop offset="1" stop-color="#4F7BFF"/>
-    <animateTransform attributeName="gradientTransform" type="translate" values="-500 0;600 0" dur="5s" repeatCount="indefinite"/>
-  </linearGradient>
-  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2FE0FF"/><stop offset=".5" stop-color="#1AA7FF"/><stop offset="1" stop-color="#4F7BFF"/></linearGradient>
-  <linearGradient id="brandv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2FE0FF"/><stop offset="1" stop-color="#4F7BFF"/></linearGradient>
-  <radialGradient id="glowA"><stop offset="0" stop-color="#1AA7FF" stop-opacity=".55"/><stop offset="1" stop-color="#1AA7FF" stop-opacity="0"/></radialGradient>
-  <radialGradient id="glowB"><stop offset="0" stop-color="#4F7BFF" stop-opacity=".45"/><stop offset="1" stop-color="#4F7BFF" stop-opacity="0"/></radialGradient>
-  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="rgba(148,180,255,.10)" stroke-width="1"/></pattern>
-  <linearGradient id="fadeY" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-  <mask id="gridMask"><rect width="1200" height="640" fill="url(#fadeY)"/></mask>
-  <clipPath id="card"><rect width="1200" height="640" rx="28"/></clipPath>
+<defs>
+  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <linearGradient id="brandd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <linearGradient id="cardG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#243B53"/><stop offset="1" stop-color="#0A1628"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#00A8FF" stop-opacity=".35"/><stop offset="1" stop-color="#00A8FF" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" stroke="rgba(0,168,255,.07)"/></pattern>
+  <clipPath id="frame"><rect width="1200" height="640" rx="8"/></clipPath>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/><animateTransform attributeName="gradientTransform" type="translate" values="-1.2 0;1.2 0" dur="3.4s" repeatCount="indefinite"/></linearGradient><linearGradient id="disc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B83E0"/><stop offset="1" stop-color="#0D3F8F"/></linearGradient><radialGradient id="vig" cx=".5" cy=".47" r=".7"><stop offset="0" stop-color="#050B14" stop-opacity=".2"/><stop offset=".55" stop-color="#050B14" stop-opacity=".55"/><stop offset="1" stop-color="#050B14" stop-opacity=".95"/></radialGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050B14" stop-opacity=".85"/><stop offset=".25" stop-color="#050B14" stop-opacity=".2"/><stop offset=".8" stop-color="#050B14" stop-opacity=".2"/><stop offset="1" stop-color="#050B14"/></linearGradient>
 </defs>
 <style>
-  text{font-family:'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
-  .serif{font-family:Georgia,'Times New Roman',serif;font-style:italic}
-  .mono{font-family:'JetBrains Mono','Cascadia Code',Consolas,'SFMono-Regular',Menlo,monospace}
-  .t{fill:#EAF2FF} .m{fill:#8E9BB3}
-  @keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,24px)}}
-  @keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-36px,-20px)}}
-  @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+  text{font-family:Inter,'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+  .w{fill:#FFFFFF} .g{fill:#D1D5DB} .m{fill:#9CA3AF} .b{fill:#00A8FF} .n{fill:#050B14} .s{fill:#243B53}
+  .cap{font-size:13px;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
   @keyframes fade{from{opacity:0}to{opacity:1}}
-  @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
-  @keyframes spin{to{transform:rotate(360deg)}}
-  .ga{animation:drift 14s ease-in-out infinite}
-  .gb{animation:drift2 18s ease-in-out infinite}
-  .r{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
-  
-    @keyframes draw{to{stroke-dashoffset:0}}
-    @keyframes scan{from{transform:translateY(0)}to{transform:translateY(880px)}}
-    @keyframes words{0%,16%{transform:translateY(0)}20%,36%{transform:translateY(-36px)}40%,56%{transform:translateY(-72px)}60%,76%{transform:translateY(-108px)}80%,96%{transform:translateY(-144px)}100%{transform:translateY(-180px)}}
-    @keyframes sheen{from{transform:translateX(-600px)}to{transform:translateX(900px)}}
-  @media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important;transform:none!important}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+  .r{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+  .f{animation:fade 1s ease both}
+  @keyframes draw{from{stroke-dashoffset:18.0}to{stroke-dashoffset:0}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
-<g clip-path="url(#card)">
-  <rect width="1200" height="640" fill="#070B14"/>
-  <circle class="ga" cx="216" cy="64" r="456" fill="url(#glowA)" opacity=".55"/>
-  <circle class="gb" cx="1080" cy="608" r="408.00000000000006" fill="url(#glowB)" opacity=".5"/>
-  <rect width="1200" height="640" fill="url(#grid)" mask="url(#gridMask)"/>
+<g clip-path="url(#frame)">
+<rect width="1200" height="640" fill="#050B14"/>
+
+  <line x1="750.5" y1="300.0" x2="1060.9" y2="300.1" stroke="#00A8FF" stroke-opacity="0.32" stroke-width="1.3" stroke-dasharray="49 310" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="49" to="-310" dur="3.50s" begin="-2.26s" repeatCount="indefinite"/></line><line x1="603.4" y1="234.8" x2="619.8" y2="-84.9" stroke="#8FA8C8" stroke-opacity="0.22" stroke-width="1.3" stroke-dasharray="87 320" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="87" to="-320" dur="3.72s" begin="-2.12s" repeatCount="indefinite"/></line><line x1="585.1" y1="272.7" x2="419.8" y2="-30.1" stroke="#8FA8C8" stroke-opacity="0.41" stroke-width="1.0" stroke-dasharray="72 345" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="72" to="-345" dur="4.00s" begin="-1.54s" repeatCount="indefinite"/></line><line x1="708.6" y1="264.7" x2="1146.8" y2="122.3" stroke="#8FA8C8" stroke-opacity="0.45" stroke-width="1.3" stroke-dasharray="82 461" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="82" to="-461" dur="3.97s" begin="-1.01s" repeatCount="indefinite"/></line><line x1="641.6" y1="257.7" x2="766.2" y2="131.0" stroke="#8FA8C8" stroke-opacity="0.24" stroke-width="2.1" stroke-dasharray="57 178" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="57" to="-178" dur="2.71s" begin="-1.67s" repeatCount="indefinite"/></line><line x1="581.1" y1="210.7" x2="556.4" y2="93.6" stroke="#8FA8C8" stroke-opacity="0.31" stroke-width="1.4" stroke-dasharray="55 120" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="55" to="-120" dur="3.06s" begin="-0.58s" repeatCount="indefinite"/></line><line x1="639.2" y1="284.4" x2="933.5" y2="166.9" stroke="#8FA8C8" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="61 317" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="61" to="-317" dur="3.33s" begin="-0.50s" repeatCount="indefinite"/></line><line x1="538.6" y1="325.7" x2="248.8" y2="446.8" stroke="#00A8FF" stroke-opacity="0.32" stroke-width="1.7" stroke-dasharray="68 314" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="68" to="-314" dur="2.46s" begin="-0.70s" repeatCount="indefinite"/></line><line x1="679.0" y1="267.4" x2="1185.7" y2="58.2" stroke="#8FA8C8" stroke-opacity="0.32" stroke-width="1.5" stroke-dasharray="87 548" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="87" to="-548" dur="3.25s" begin="-2.07s" repeatCount="indefinite"/></line><line x1="681.4" y1="279.9" x2="1172.0" y2="158.5" stroke="#8FA8C8" stroke-opacity="0.26" stroke-width="1.3" stroke-dasharray="53 505" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="53" to="-505" dur="3.13s" begin="-1.17s" repeatCount="indefinite"/></line><line x1="640.3" y1="213.4" x2="700.7" y2="83.7" stroke="#8FA8C8" stroke-opacity="0.28" stroke-width="1.0" stroke-dasharray="104 143" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="104" to="-143" dur="1.80s" begin="-0.23s" repeatCount="indefinite"/></line><line x1="666.4" y1="299.0" x2="1155.1" y2="291.8" stroke="#8FA8C8" stroke-opacity="0.34" stroke-width="1.0" stroke-dasharray="43 489" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="43" to="-489" dur="2.79s" begin="-2.77s" repeatCount="indefinite"/></line><line x1="709.9" y1="239.6" x2="1174.1" y2="-15.5" stroke="#8FA8C8" stroke-opacity="0.23" stroke-width="0.8" stroke-dasharray="112 530" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="112" to="-530" dur="3.58s" begin="-0.74s" repeatCount="indefinite"/></line><line x1="635.7" y1="311.5" x2="1062.6" y2="448.5" stroke="#8FA8C8" stroke-opacity="0.31" stroke-width="1.8" stroke-dasharray="51 448" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="51" to="-448" dur="3.53s" begin="-0.71s" repeatCount="indefinite"/></line><line x1="650.3" y1="271.5" x2="911.9" y2="123.1" stroke="#00A8FF" stroke-opacity="0.31" stroke-width="0.8" stroke-dasharray="110 301" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="110" to="-301" dur="1.91s" begin="-2.74s" repeatCount="indefinite"/></line><line x1="501.8" y1="229.2" x2="390.3" y2="148.9" stroke="#8FA8C8" stroke-opacity="0.47" stroke-width="1.6" stroke-dasharray="111 137" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="111" to="-137" dur="2.09s" begin="-2.04s" repeatCount="indefinite"/></line><line x1="593.2" y1="341.2" x2="565.8" y2="506.8" stroke="#8FA8C8" stroke-opacity="0.40" stroke-width="1.8" stroke-dasharray="81 168" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="81" to="-168" dur="1.74s" begin="-2.14s" repeatCount="indefinite"/></line><line x1="556.1" y1="300.3" x2="338.7" y2="301.8" stroke="#8FA8C8" stroke-opacity="0.37" stroke-width="2.1" stroke-dasharray="113 217" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="113" to="-217" dur="1.94s" begin="-0.11s" repeatCount="indefinite"/></line><line x1="706.4" y1="240.4" x2="1208.4" y2="-40.5" stroke="#8FA8C8" stroke-opacity="0.28" stroke-width="1.1" stroke-dasharray="116 575" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="116" to="-575" dur="3.59s" begin="-2.18s" repeatCount="indefinite"/></line><line x1="664.8" y1="263.3" x2="873.1" y2="145.4" stroke="#8FA8C8" stroke-opacity="0.33" stroke-width="1.3" stroke-dasharray="66 239" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="66" to="-239" dur="3.91s" begin="-1.86s" repeatCount="indefinite"/></line><line x1="592.4" y1="250.5" x2="541.5" y2="-81.0" stroke="#8FA8C8" stroke-opacity="0.25" stroke-width="2.2" stroke-dasharray="68 335" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="68" to="-335" dur="2.12s" begin="-2.98s" repeatCount="indefinite"/></line><line x1="502.6" y1="233.7" x2="73.2" y2="-58.5" stroke="#00A8FF" stroke-opacity="0.19" stroke-width="1.5" stroke-dasharray="48 519" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="48" to="-519" dur="3.28s" begin="-1.67s" repeatCount="indefinite"/></line><line x1="620.6" y1="205.7" x2="675.6" y2="-46.6" stroke="#8FA8C8" stroke-opacity="0.20" stroke-width="1.7" stroke-dasharray="47 258" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="47" to="-258" dur="2.76s" begin="-1.57s" repeatCount="indefinite"/></line><line x1="506.6" y1="276.4" x2="-6.2" y2="147.0" stroke="#8FA8C8" stroke-opacity="0.15" stroke-width="1.2" stroke-dasharray="63 529" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="63" to="-529" dur="3.55s" begin="-1.63s" repeatCount="indefinite"/></line><line x1="637.1" y1="375.1" x2="728.1" y2="559.7" stroke="#8FA8C8" stroke-opacity="0.29" stroke-width="0.9" stroke-dasharray="51 206" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="51" to="-206" dur="3.31s" begin="-2.32s" repeatCount="indefinite"/></line><line x1="666.2" y1="216.7" x2="946.1" y2="-135.5" stroke="#8FA8C8" stroke-opacity="0.15" stroke-width="1.9" stroke-dasharray="91 450" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="91" to="-450" dur="4.09s" begin="-1.80s" repeatCount="indefinite"/></line><line x1="576.0" y1="209.6" x2="546.9" y2="99.9" stroke="#8FA8C8" stroke-opacity="0.18" stroke-width="0.9" stroke-dasharray="42 113" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="42" to="-113" dur="1.81s" begin="-0.03s" repeatCount="indefinite"/></line><line x1="478.7" y1="241.7" x2="273.5" y2="142.9" stroke="#8FA8C8" stroke-opacity="0.37" stroke-width="1.1" stroke-dasharray="42 228" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="42" to="-228" dur="2.13s" begin="-1.37s" repeatCount="indefinite"/></line><line x1="690.6" y1="297.9" x2="1200.6" y2="285.9" stroke="#00A8FF" stroke-opacity="0.28" stroke-width="0.9" stroke-dasharray="100 510" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="100" to="-510" dur="2.63s" begin="-0.69s" repeatCount="indefinite"/></line><line x1="655.6" y1="209.0" x2="740.4" y2="70.3" stroke="#8FA8C8" stroke-opacity="0.18" stroke-width="1.1" stroke-dasharray="113 163" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="113" to="-163" dur="2.92s" begin="-1.81s" repeatCount="indefinite"/></line><line x1="623.6" y1="326.9" x2="768.2" y2="491.1" stroke="#8FA8C8" stroke-opacity="0.30" stroke-width="2.2" stroke-dasharray="88 219" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="88" to="-219" dur="3.05s" begin="-0.23s" repeatCount="indefinite"/></line><line x1="533.5" y1="324.9" x2="394.7" y2="377.0" stroke="#8FA8C8" stroke-opacity="0.17" stroke-width="1.1" stroke-dasharray="31 148" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="31" to="-148" dur="2.68s" begin="-2.77s" repeatCount="indefinite"/></line><line x1="622.6" y1="219.6" x2="689.1" y2="-16.9" stroke="#8FA8C8" stroke-opacity="0.41" stroke-width="1.7" stroke-dasharray="107 246" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="107" to="-246" dur="4.10s" begin="-1.72s" repeatCount="indefinite"/></line><line x1="548.7" y1="345.0" x2="306.9" y2="556.7" stroke="#8FA8C8" stroke-opacity="0.39" stroke-width="1.7" stroke-dasharray="75 321" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="75" to="-321" dur="3.08s" begin="-1.90s" repeatCount="indefinite"/></line><line x1="580.8" y1="210.2" x2="501.8" y2="-158.3" stroke="#8FA8C8" stroke-opacity="0.31" stroke-width="2.1" stroke-dasharray="119 377" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="119" to="-377" dur="2.74s" begin="-2.93s" repeatCount="indefinite"/></line><line x1="569.0" y1="323.9" x2="357.0" y2="487.4" stroke="#00A8FF" stroke-opacity="0.39" stroke-width="2.1" stroke-dasharray="109 268" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="109" to="-268" dur="3.44s" begin="-2.36s" repeatCount="indefinite"/></line><line x1="618.3" y1="341.0" x2="771.6" y2="684.7" stroke="#8FA8C8" stroke-opacity="0.41" stroke-width="1.7" stroke-dasharray="39 376" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="39" to="-376" dur="3.98s" begin="-2.13s" repeatCount="indefinite"/></line><line x1="509.2" y1="287.1" x2="-88.8" y2="202.1" stroke="#8FA8C8" stroke-opacity="0.23" stroke-width="1.8" stroke-dasharray="81 604" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="81" to="-604" dur="3.87s" begin="-1.30s" repeatCount="indefinite"/></line><line x1="550.6" y1="323.7" x2="182.0" y2="500.8" stroke="#8FA8C8" stroke-opacity="0.42" stroke-width="1.3" stroke-dasharray="51 409" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="51" to="-409" dur="3.94s" begin="-2.05s" repeatCount="indefinite"/></line><line x1="638.7" y1="276.7" x2="868.3" y2="138.6" stroke="#8FA8C8" stroke-opacity="0.18" stroke-width="1.4" stroke-dasharray="113 268" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="113" to="-268" dur="1.60s" begin="-0.06s" repeatCount="indefinite"/></line><line x1="548.1" y1="214.2" x2="460.3" y2="69.2" stroke="#8FA8C8" stroke-opacity="0.38" stroke-width="1.0" stroke-dasharray="49 170" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="49" to="-170" dur="4.06s" begin="-0.35s" repeatCount="indefinite"/></line><line x1="570.7" y1="281.4" x2="163.1" y2="23.7" stroke="#8FA8C8" stroke-opacity="0.18" stroke-width="1.3" stroke-dasharray="83 482" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="83" to="-482" dur="3.55s" begin="-2.14s" repeatCount="indefinite"/></line><line x1="701.6" y1="281.7" x2="1149.0" y2="201.2" stroke="#00A8FF" stroke-opacity="0.39" stroke-width="1.6" stroke-dasharray="100 455" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="100" to="-455" dur="3.43s" begin="-0.30s" repeatCount="indefinite"/></line><line x1="709.0" y1="319.8" x2="974.8" y2="368.1" stroke="#8FA8C8" stroke-opacity="0.22" stroke-width="1.7" stroke-dasharray="82 270" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="82" to="-270" dur="2.25s" begin="-1.89s" repeatCount="indefinite"/></line><line x1="626.4" y1="260.7" x2="869.1" y2="-100.4" stroke="#8FA8C8" stroke-opacity="0.28" stroke-width="1.9" stroke-dasharray="35 435" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="35" to="-435" dur="3.40s" begin="-1.98s" repeatCount="indefinite"/></line><line x1="617.7" y1="269.3" x2="832.6" y2="-103.2" stroke="#8FA8C8" stroke-opacity="0.28" stroke-width="2.0" stroke-dasharray="75 430" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="75" to="-430" dur="3.74s" begin="-2.37s" repeatCount="indefinite"/></line><line x1="578.7" y1="208.6" x2="491.9" y2="-163.4" stroke="#8FA8C8" stroke-opacity="0.19" stroke-width="1.0" stroke-dasharray="47 382" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="47" to="-382" dur="3.47s" begin="-2.85s" repeatCount="indefinite"/></line><line x1="644.9" y1="291.9" x2="836.9" y2="257.1" stroke="#8FA8C8" stroke-opacity="0.44" stroke-width="2.1" stroke-dasharray="54 195" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="54" to="-195" dur="4.05s" begin="-0.83s" repeatCount="indefinite"/></line><line x1="613.9" y1="325.6" x2="743.1" y2="563.1" stroke="#8FA8C8" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="80 270" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="80" to="-270" dur="1.97s" begin="-0.68s" repeatCount="indefinite"/></line><line x1="642.6" y1="309.5" x2="838.9" y2="353.3" stroke="#00A8FF" stroke-opacity="0.41" stroke-width="1.8" stroke-dasharray="87 201" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="87" to="-201" dur="2.82s" begin="-1.53s" repeatCount="indefinite"/></line><line x1="573.5" y1="248.9" x2="426.6" y2="-33.7" stroke="#8FA8C8" stroke-opacity="0.47" stroke-width="1.8" stroke-dasharray="117 319" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="117" to="-319" dur="3.60s" begin="-1.81s" repeatCount="indefinite"/></line><line x1="619.7" y1="264.5" x2="682.8" y2="150.7" stroke="#8FA8C8" stroke-opacity="0.29" stroke-width="1.6" stroke-dasharray="95 130" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="95" to="-130" dur="3.28s" begin="-1.16s" repeatCount="indefinite"/></line><line x1="545.4" y1="301.2" x2="351.0" y2="305.4" stroke="#8FA8C8" stroke-opacity="0.26" stroke-width="1.1" stroke-dasharray="37 194" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="37" to="-194" dur="2.52s" begin="-1.92s" repeatCount="indefinite"/></line><line x1="632.6" y1="320.3" x2="746.0" y2="391.0" stroke="#8FA8C8" stroke-opacity="0.16" stroke-width="1.9" stroke-dasharray="105 134" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="105" to="-134" dur="3.86s" begin="-0.95s" repeatCount="indefinite"/></line><line x1="478.2" y1="353.2" x2="8.7" y2="558.3" stroke="#8FA8C8" stroke-opacity="0.21" stroke-width="1.7" stroke-dasharray="31 512" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="31" to="-512" dur="4.18s" begin="-1.28s" repeatCount="indefinite"/></line><line x1="659.4" y1="307.8" x2="1200.2" y2="378.8" stroke="#8FA8C8" stroke-opacity="0.43" stroke-width="1.9" stroke-dasharray="98 545" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="98" to="-545" dur="2.25s" begin="-0.95s" repeatCount="indefinite"/></line><line x1="526.6" y1="311.9" x2="244.4" y2="357.7" stroke="#00A8FF" stroke-opacity="0.37" stroke-width="1.5" stroke-dasharray="109 286" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="109" to="-286" dur="3.86s" begin="-2.60s" repeatCount="indefinite"/></line><line x1="658.4" y1="222.8" x2="894.2" y2="-89.1" stroke="#8FA8C8" stroke-opacity="0.24" stroke-width="1.8" stroke-dasharray="117 391" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="117" to="-391" dur="3.40s" begin="-0.97s" repeatCount="indefinite"/></line><line x1="639.1" y1="272.1" x2="1032.8" y2="-8.2" stroke="#8FA8C8" stroke-opacity="0.30" stroke-width="1.9" stroke-dasharray="89 483" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="89" to="-483" dur="3.72s" begin="-2.49s" repeatCount="indefinite"/></line><line x1="665.4" y1="311.1" x2="917.8" y2="354.0" stroke="#8FA8C8" stroke-opacity="0.42" stroke-width="1.7" stroke-dasharray="32 256" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="32" to="-256" dur="3.10s" begin="-2.56s" repeatCount="indefinite"/></line><line x1="691.3" y1="236.2" x2="869.0" y2="111.9" stroke="#8FA8C8" stroke-opacity="0.27" stroke-width="1.6" stroke-dasharray="81 217" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="81" to="-217" dur="2.80s" begin="-2.25s" repeatCount="indefinite"/></line><line x1="514.5" y1="294.1" x2="97.2" y2="265.4" stroke="#8FA8C8" stroke-opacity="0.40" stroke-width="1.2" stroke-dasharray="52 418" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="52" to="-418" dur="3.43s" begin="-0.76s" repeatCount="indefinite"/></line><line x1="519.9" y1="256.8" x2="31.3" y2="-7.0" stroke="#8FA8C8" stroke-opacity="0.34" stroke-width="1.6" stroke-dasharray="81 555" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="81" to="-555" dur="2.42s" begin="-1.91s" repeatCount="indefinite"/></line><line x1="546.4" y1="284.1" x2="304.2" y2="212.2" stroke="#00A8FF" stroke-opacity="0.36" stroke-width="2.0" stroke-dasharray="41 253" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="41" to="-253" dur="2.47s" begin="-1.93s" repeatCount="indefinite"/></line><line x1="537.3" y1="332.5" x2="255.6" y2="478.3" stroke="#8FA8C8" stroke-opacity="0.16" stroke-width="1.5" stroke-dasharray="41 317" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="41" to="-317" dur="2.00s" begin="-1.13s" repeatCount="indefinite"/></line><line x1="697.5" y1="339.1" x2="1008.0" y2="463.7" stroke="#8FA8C8" stroke-opacity="0.43" stroke-width="1.2" stroke-dasharray="71 335" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="71" to="-335" dur="1.86s" begin="-0.91s" repeatCount="indefinite"/></line><line x1="646.5" y1="327.6" x2="926.4" y2="493.7" stroke="#8FA8C8" stroke-opacity="0.34" stroke-width="1.9" stroke-dasharray="48 325" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="48" to="-325" dur="3.18s" begin="-2.35s" repeatCount="indefinite"/></line><line x1="456.1" y1="304.3" x2="-59.1" y2="319.7" stroke="#8FA8C8" stroke-opacity="0.39" stroke-width="2.0" stroke-dasharray="41 516" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="41" to="-516" dur="3.22s" begin="-1.74s" repeatCount="indefinite"/></line><line x1="673.3" y1="290.5" x2="1336.3" y2="204.7" stroke="#8FA8C8" stroke-opacity="0.24" stroke-width="2.0" stroke-dasharray="33 669" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="33" to="-669" dur="1.87s" begin="-2.70s" repeatCount="indefinite"/></line><line x1="582.4" y1="235.4" x2="535.2" y2="61.6" stroke="#8FA8C8" stroke-opacity="0.20" stroke-width="1.9" stroke-dasharray="78 180" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="78" to="-180" dur="3.62s" begin="-2.05s" repeatCount="indefinite"/></line><line x1="465.7" y1="253.1" x2="187.3" y2="156.0" stroke="#00A8FF" stroke-opacity="0.31" stroke-width="1.7" stroke-dasharray="33 295" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="33" to="-295" dur="3.51s" begin="-2.08s" repeatCount="indefinite"/></line><line x1="581.1" y1="274.4" x2="361.8" y2="-22.9" stroke="#8FA8C8" stroke-opacity="0.37" stroke-width="1.6" stroke-dasharray="118 369" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="118" to="-369" dur="3.80s" begin="-0.66s" repeatCount="indefinite"/></line><line x1="526.0" y1="251.1" x2="260.2" y2="75.5" stroke="#8FA8C8" stroke-opacity="0.36" stroke-width="2.2" stroke-dasharray="32 319" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="32" to="-319" dur="3.84s" begin="-0.92s" repeatCount="indefinite"/></line><line x1="594.6" y1="205.5" x2="578.3" y2="-77.7" stroke="#8FA8C8" stroke-opacity="0.22" stroke-width="1.4" stroke-dasharray="86 284" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="86" to="-284" dur="2.12s" begin="-1.30s" repeatCount="indefinite"/></line><line x1="703.4" y1="319.6" x2="1244.6" y2="422.3" stroke="#8FA8C8" stroke-opacity="0.24" stroke-width="1.7" stroke-dasharray="106 551" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="106" to="-551" dur="1.82s" begin="-1.27s" repeatCount="indefinite"/></line><line x1="569.3" y1="342.3" x2="487.9" y2="454.2" stroke="#8FA8C8" stroke-opacity="0.36" stroke-width="1.5" stroke-dasharray="63 138" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="63" to="-138" dur="2.72s" begin="-1.63s" repeatCount="indefinite"/></line><line x1="495.6" y1="329.5" x2="-74.8" y2="490.7" stroke="#8FA8C8" stroke-opacity="0.42" stroke-width="2.2" stroke-dasharray="115 593" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="115" to="-593" dur="2.80s" begin="-1.95s" repeatCount="indefinite"/></line><line x1="504.8" y1="340.4" x2="350.1" y2="406.0" stroke="#00A8FF" stroke-opacity="0.43" stroke-width="1.0" stroke-dasharray="56 168" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="56" to="-168" dur="1.67s" begin="-0.72s" repeatCount="indefinite"/></line><line x1="566.6" y1="264.3" x2="415.4" y2="102.5" stroke="#8FA8C8" stroke-opacity="0.24" stroke-width="1.7" stroke-dasharray="43 221" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="43" to="-221" dur="3.58s" begin="-2.27s" repeatCount="indefinite"/></line><line x1="738.4" y1="307.7" x2="1369.7" y2="343.1" stroke="#8FA8C8" stroke-opacity="0.16" stroke-width="1.1" stroke-dasharray="99 632" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="99" to="-632" dur="4.08s" begin="-0.12s" repeatCount="indefinite"/></line><line x1="696.7" y1="293.6" x2="998.8" y2="273.8" stroke="#8FA8C8" stroke-opacity="0.38" stroke-width="1.9" stroke-dasharray="77 303" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="77" to="-303" dur="3.77s" begin="-0.03s" repeatCount="indefinite"/></line><line x1="685.8" y1="346.6" x2="1099.2" y2="571.2" stroke="#8FA8C8" stroke-opacity="0.28" stroke-width="1.9" stroke-dasharray="38 470" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="38" to="-470" dur="2.35s" begin="-2.03s" repeatCount="indefinite"/></line><line x1="560.1" y1="273.2" x2="123.6" y2="-20.2" stroke="#8FA8C8" stroke-opacity="0.39" stroke-width="1.0" stroke-dasharray="120 526" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="120" to="-526" dur="3.21s" begin="-2.67s" repeatCount="indefinite"/></line><line x1="643.7" y1="342.5" x2="924.8" y2="615.5" stroke="#8FA8C8" stroke-opacity="0.47" stroke-width="1.4" stroke-dasharray="68 392" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="68" to="-392" dur="2.81s" begin="-1.65s" repeatCount="indefinite"/></line><line x1="572.2" y1="272.6" x2="439.9" y2="141.8" stroke="#00A8FF" stroke-opacity="0.25" stroke-width="2.2" stroke-dasharray="47 186" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="47" to="-186" dur="3.78s" begin="-1.62s" repeatCount="indefinite"/></line><line x1="667.3" y1="343.7" x2="960.2" y2="533.8" stroke="#8FA8C8" stroke-opacity="0.42" stroke-width="1.4" stroke-dasharray="31 349" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="31" to="-349" dur="3.01s" begin="-0.63s" repeatCount="indefinite"/></line><line x1="706.1" y1="329.4" x2="1059.1" y2="427.1" stroke="#8FA8C8" stroke-opacity="0.15" stroke-width="2.1" stroke-dasharray="42 366" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="42" to="-366" dur="3.77s" begin="-2.16s" repeatCount="indefinite"/></line><line x1="692.7" y1="252.4" x2="1089.0" y2="48.9" stroke="#8FA8C8" stroke-opacity="0.37" stroke-width="1.5" stroke-dasharray="106 446" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="106" to="-446" dur="2.32s" begin="-0.00s" repeatCount="indefinite"/></line><line x1="636.5" y1="321.8" x2="773.5" y2="403.8" stroke="#8FA8C8" stroke-opacity="0.22" stroke-width="1.3" stroke-dasharray="76 160" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="76" to="-160" dur="1.91s" begin="-1.96s" repeatCount="indefinite"/></line><line x1="602.4" y1="343.0" x2="620.8" y2="672.9" stroke="#8FA8C8" stroke-opacity="0.43" stroke-width="1.1" stroke-dasharray="98 330" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="98" to="-330" dur="3.37s" begin="-0.83s" repeatCount="indefinite"/></line>
+  <rect width="1200" height="640" fill="url(#vig)"/>
+  <rect width="1200" height="640" fill="url(#shade)"/>
   
-  <!-- scanning light -->
-  <rect x="0" y="-120" width="1200" height="120" fill="url(#scan)" style="animation:scan 7s linear infinite"/>
-  <!-- nav bar -->
-  <g class="r" style="animation-delay:.1s">
-    <g>
-    <g><circle cx="70" cy="54" r="13.200000000000001" stroke="url(#brandv)" stroke-width="2.4000000000000004" stroke-dasharray="66 17" stroke-linecap="round" transform="rotate(35 70 54)"/></g>
-    <circle cx="70" cy="54" r="9.200000000000001" fill="url(#discG)"/>
-    <circle cx="70" cy="54" r="9.200000000000001" fill="url(#discShine)"/>
-    <path d="M67.2 48.8 L69.2 48.8 L69.2 57.6 L74.0 57.6 L74.0 59.6 L67.2 59.6 Z" fill="#EAF6FF"/>
-    <path d="M79.6 49.2 L84.0 49.2 L86.4 46.8 L89.2 46.8" stroke="url(#brand)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /><path d="M80.8 54.0 L91.2 54.0" stroke="url(#brand)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /><path d="M79.6 58.8 L84.0 58.8 L86.4 61.2 L89.2 61.2" stroke="url(#brand)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-    <circle cx="90.8" cy="46.8" r="1.6" stroke="url(#brand)" stroke-width="1.2000000000000002" fill="#070B14" /><circle cx="92.8" cy="54.0" r="1.6" stroke="url(#brand)" stroke-width="1.2000000000000002" fill="#070B14" /><circle cx="90.8" cy="61.2" r="1.6" stroke="url(#brand)" stroke-width="1.2000000000000002" fill="#070B14" />
+  <g class="f">
+    <circle cx="44" cy="42" r="9.9" stroke="#1E63B8" stroke-width="1.7999999999999998" stroke-dasharray="49.5 12.75" stroke-linecap="round" transform="rotate(35 44 42)"/>
+  <circle cx="44" cy="42" r="6.8999999999999995" fill="url(#disc)"/>
+  <path d="M41.9 38.1 L43.4 38.1 L43.4 44.7 L47.0 44.7 L47.0 46.2 L41.9 46.2 Z" fill="#DCEBFA"/>
+  <path d="M51.2 38.4 L54.5 38.4 L56.3 36.6 L58.4 36.6" stroke="#1E63B8" stroke-width="1.3499999999999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18" style="animation:draw 1.2s 0.6s cubic-bezier(.6,0,.2,1) both"/><path d="M52.1 42.0 L59.9 42.0" stroke="#1E63B8" stroke-width="1.3499999999999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18" style="animation:draw 1.2s 0.8s cubic-bezier(.6,0,.2,1) both"/><path d="M51.2 45.6 L54.5 45.6 L56.3 47.4 L58.4 47.4" stroke="#1E63B8" stroke-width="1.3499999999999999" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18" style="animation:draw 1.2s 1s cubic-bezier(.6,0,.2,1) both"/>
+  <circle cx="59.6" cy="36.6" r="1.2" stroke="#1E63B8" stroke-width="0.8999999999999999" fill="#050B14"/><circle cx="61.1" cy="42.0" r="1.2" stroke="#1E63B8" stroke-width="0.8999999999999999" fill="#050B14"/><circle cx="59.6" cy="47.4" r="1.2" stroke="#1E63B8" stroke-width="0.8999999999999999" fill="#050B14"/>
+    <text x="74" y="49" font-size="18" font-weight="700" class="w">Leukode Labs</text>
+    <text x="596" y="47" class="cap g">About</text><text x="678" y="47" class="cap g">Services</text><text x="786" y="47" class="cap g">Site Check</text><text x="908" y="47" class="cap g">Pages</text>
+    <path d="M964 41 l4 4 l4 -4" stroke="#D1D5DB" stroke-width="1.6" fill="none"/>
+    <line x1="1010" y1="28" x2="1010" y2="56" stroke="rgba(255,255,255,.10)"/>
+    <g transform="translate(1040 22)"><rect width="128" height="40" rx="2" fill="#00A8FF"/><rect width="128" height="40" rx="2" fill="url(#shine)"/><text x="64" y="25" text-anchor="middle" class="cap n" font-size="12.5">Book a call</text></g>
   </g>
-    <text x="98" y="60" font-size="17" font-weight="700" letter-spacing="3" class="t">LEUKODE LABS</text>
-    <text x="640" y="60" font-size="15" class="m">Work</text><text x="732" y="60" font-size="15" class="m">Services</text><text x="824" y="60" font-size="15" class="m">Stack</text><text x="916" y="60" font-size="15" class="m">Principles</text><text x="1008" y="60" font-size="15" class="m">Contact</text>
-  </g>
-  <line x1="40" y1="96" x2="1160" y2="96" stroke="rgba(148,180,255,.12)"/>
-
-  <!-- copy -->
-  <g class="r" style="animation-delay:.35s">
-    <rect x="64" y="146" width="360" height="36" rx="18" fill="rgba(26,167,255,.10)" stroke="rgba(26,167,255,.35)"/>
-    <circle cx="86" cy="164" r="5" fill="#2FE0FF" style="animation:pulse 1.8s ease-in-out infinite"/>
-    <text x="102" y="169" font-size="13" font-weight="600" letter-spacing="2.4" fill="#2FE0FF" class="mono">SOFTWARE STUDIO · KIGALI → GLOBAL</text>
-  </g>
-  <text x="60" y="282" font-size="84" font-weight="800" letter-spacing="-3" class="t r" style="animation-delay:.5s">Building</text>
-  <text x="60" y="372" font-size="84" font-weight="800" letter-spacing="-3" fill="url(#shimmer)" class="r" style="animation-delay:.65s">intelligence</text>
-  <text x="62" y="458" font-size="80" class="serif t r" style="animation-delay:.8s">beyond limits.</text>
-
-  <!-- rotating line -->
-  <g class="r" style="animation-delay:1.05s">
-    <text x="64" y="530" font-size="22" class="m">We design, build and ship</text>
-    <clipPath id="wordclip"><rect x="318" y="504" width="320" height="36"/></clipPath>
-    <g clip-path="url(#wordclip)"><g style="animation:words 12.5s cubic-bezier(.7,0,.2,1) infinite">
-      <text x="324" y="530" font-size="22" font-weight="700" fill="url(#brand)">AI systems</text><text x="324" y="566" font-size="22" font-weight="700" fill="url(#brand)">web platforms</text><text x="324" y="602" font-size="22" font-weight="700" fill="url(#brand)">mobile apps</text><text x="324" y="638" font-size="22" font-weight="700" fill="url(#brand)">desktop software</text><text x="324" y="674" font-size="22" font-weight="700" fill="url(#brand)">automation</text><text x="324" y="710" font-size="22" font-weight="700" fill="url(#brand)">AI systems</text>
-    </g></g>
-  </g>
-
-  <!-- mark -->
-  <g style="animation:fade 1.2s .4s both">
-    <circle cx="930" cy="356" r="190" stroke="rgba(148,180,255,.10)" stroke-dasharray="4 10"><animateTransform attributeName="transform" type="rotate" from="0 930 356" to="360 930 356" dur="60s" repeatCount="indefinite"/></circle>
-    <circle cx="930" cy="356" r="236" stroke="rgba(148,180,255,.07)"/>
-    <g><animateTransform attributeName="transform" type="rotate" from="0 930 356" to="360 930 356" dur="16s" repeatCount="indefinite"/><circle cx="930" cy="120" r="5" fill="#2FE0FF"/></g>
-    <g><animateTransform attributeName="transform" type="rotate" from="360 930 356" to="0 930 356" dur="26s" repeatCount="indefinite"/><circle cx="1120" cy="356" r="4" fill="#4F7BFF"/></g>
-    <circle cx="930" cy="356" r="120" fill="url(#glowA)" opacity=".7"/>
-    <g>
-    <g><circle cx="905" cy="356" r="99" stroke="url(#brandv)" stroke-width="18" stroke-dasharray="495 127.5" stroke-linecap="round" transform="rotate(35 905 356)"/></g>
-    <circle cx="905" cy="356" r="69" fill="url(#discG)"/>
-    <circle cx="905" cy="356" r="69" fill="url(#discShine)"/>
-    <path d="M884.0 317.0 L899.0 317.0 L899.0 383.0 L935.0 383.0 L935.0 398.0 L884.0 398.0 Z" fill="#EAF6FF"/>
-    <path d="M977.0 320.0 L1010.0 320.0 L1028.0 302.0 L1049.0 302.0" stroke="url(#brand)" stroke-width="13.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="180" stroke-dashoffset="180" style="animation:draw 1.4s 1s cubic-bezier(.6,0,.2,1) forwards"/><path d="M986.0 356.0 L1064.0 356.0" stroke="url(#brand)" stroke-width="13.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="180" stroke-dashoffset="180" style="animation:draw 1.4s 1.25s cubic-bezier(.6,0,.2,1) forwards"/><path d="M977.0 392.0 L1010.0 392.0 L1028.0 410.0 L1049.0 410.0" stroke="url(#brand)" stroke-width="13.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="180" stroke-dashoffset="180" style="animation:draw 1.4s 1.5s cubic-bezier(.6,0,.2,1) forwards"/>
-    <circle cx="1061.0" cy="302.0" r="12" stroke="url(#brand)" stroke-width="9" fill="#070B14" style="animation:fade .4s 2.2s both, pulse 2.6s 3s ease-in-out infinite"/><circle cx="1076.0" cy="356.0" r="12" stroke="url(#brand)" stroke-width="9" fill="#070B14" style="animation:fade .4s 2.45s both, pulse 2.6s 3.4s ease-in-out infinite"/><circle cx="1061.0" cy="410.0" r="12" stroke="url(#brand)" stroke-width="9" fill="#070B14" style="animation:fade .4s 2.7s both, pulse 2.6s 3.8s ease-in-out infinite"/>
-  </g>
-  </g>
-
-  <!-- footer strip -->
-  <g class="r" style="animation-delay:1.3s">
-    <line x1="40" y1="586" x2="1160" y2="586" stroke="rgba(148,180,255,.10)"/>
-    <g transform="translate(64 616)"><rect x="0" y="-10" width="6" height="6" rx="1.5" fill="url(#brand)" transform="rotate(45 3 -7)"/><text x="18" y="0" font-size="14" letter-spacing="1" class="m">Production software</text></g><g transform="translate(349 616)"><rect x="0" y="-10" width="6" height="6" rx="1.5" fill="url(#brand)" transform="rotate(45 3 -7)"/><text x="18" y="0" font-size="14" letter-spacing="1" class="m">AI-native</text></g><g transform="translate(634 616)"><rect x="0" y="-10" width="6" height="6" rx="1.5" fill="url(#brand)" transform="rotate(45 3 -7)"/><text x="18" y="0" font-size="14" letter-spacing="1" class="m">Offline-first</text></g><g transform="translate(919 616)"><rect x="0" y="-10" width="6" height="6" rx="1.5" fill="url(#brand)" transform="rotate(45 3 -7)"/><text x="18" y="0" font-size="14" letter-spacing="1" class="m">Made in Rwanda</text></g>
-  </g>
+  <line x1="0" y1="84" x2="1200" y2="84" stroke="rgba(255,255,255,.10)"/>
+  <text x="240" y="196" font-size="76" font-weight="700" letter-spacing="-1.6" class="r" style="animation-delay:0.25s"><tspan class="w">Engineering</tspan></text><text x="240" y="278" font-size="76" font-weight="700" letter-spacing="-1.6" class="r" style="animation-delay:0.39s"><tspan class="w">comfort</tspan></text><text x="240" y="360" font-size="76" font-weight="700" letter-spacing="-1.6" class="r" style="animation-delay:0.53s"><tspan class="w">through </tspan><tspan fill="url(#brand)">intelligent</tspan></text><text x="240" y="442" font-size="76" font-weight="700" letter-spacing="-1.6" class="r" style="animation-delay:0.67s"><tspan fill="url(#brand)">digital systems</tspan></text>
+  <g class="r" style="animation-delay:.9s"><g transform="translate(452 540)"><rect width="136" height="44" rx="2" fill="#00A8FF"/><rect width="136" height="44" rx="2" fill="url(#shine)"/>
+    <text x="68" y="27.5" font-size="14.5" font-weight="600" text-anchor="middle" class="n">Book a Call</text></g><g transform="translate(604 540)"><rect width="152" height="44" rx="2" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.35)"/>
+    <text x="76" y="27.5" font-size="14.5" font-weight="600" text-anchor="middle" class="w">View Our Work</text></g></g>
 </g>
-<rect x=".5" y=".5" width="1199" height="639" rx="27.5" stroke="rgba(148,180,255,.16)"/>
 </svg>

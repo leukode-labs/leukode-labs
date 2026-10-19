@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" fill="none">
+<defs>
+  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <linearGradient id="brandd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <linearGradient id="cardG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#243B53"/><stop offset="1" stop-color="#0A1628"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#00A8FF" stop-opacity=".35"/><stop offset="1" stop-color="#00A8FF" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" stroke="rgba(0,168,255,.07)"/></pattern>
+  <clipPath id="frame"><rect width="1200" height="520" rx="8"/></clipPath>
+  
+</defs>
+<style>
+  text{font-family:Inter,'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+  .w{fill:#FFFFFF} .g{fill:#D1D5DB} .m{fill:#9CA3AF} .b{fill:#00A8FF} .n{fill:#050B14} .s{fill:#243B53}
+  .cap{font-size:13px;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+  .r{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+  .f{animation:fade 1s ease both}
+  
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#frame)">
+<rect width="1200" height="520" fill="#F9FAFB"/>
+
+  <g class="r" style="animation-delay:.1s">
+    <text x="64" y="166" font-size="44" font-weight="700" letter-spacing="-1" class="n">Build a powerful,</text>
+    <text x="64" y="218" font-size="44" font-weight="700" letter-spacing="-1" fill="url(#brand)">performance-driven</text>
+    <text x="64" y="270" font-size="44" font-weight="700" letter-spacing="-1" class="n">digital presence</text>
+  </g>
+  <g class="r" style="animation-delay:.3s">
+    <text x="64" y="318" font-size="17.5" class="s">Get intelligent systems that don’t just look good — they’re</text><text x="64" y="346" font-size="17.5" class="s">engineered to deliver measurable results for your business.</text><text x="64" y="374" font-size="17.5" class="s">Automation that works 24/7, analytics that matter, and</text><text x="64" y="402" font-size="17.5" class="s">control that keeps you ahead.</text>
+  </g>
+  <rect x="640" y="0" width="560" height="520" fill="#3A3F47"/>
+  <g style="animation:float 7s 0s ease-in-out infinite"><rect x="650" y="10" width="180" height="130" fill="#FFFFFF" stroke="#E5E9F0"/><rect x="664" y="24" width="54" height="7" rx="2" fill="#C9D3E0"/><rect x="664" y="40" width="32.4" height="20" rx="3" fill="#E8EEF6"/><rect x="703.6" y="40" width="32.4" height="20" rx="3" fill="#E8EEF6"/><rect x="743.2" y="40" width="32.4" height="20" rx="3" fill="#E8EEF6"/><circle cx="700.4" cy="102" r="22" stroke="#C3B5FF" stroke-width="7"/><path d="M740 122 q20 -30 40 -12 t40 -18" stroke="#8FB8FF" stroke-width="3"/></g>
+  <g style="animation:float 7s 1.2s ease-in-out infinite"><rect x="840" y="10" width="170" height="150" fill="#2B2F36" stroke="#3A3F47"/><text x="858" y="44" font-size="13" font-weight="700" fill="#F2F2F2">Weekly</text><text x="858" y="60" font-size="13" font-weight="700" fill="#F2F2F2">Revenue</text><rect x="911.4" y="47.5" width="27.2" height="75" rx="4" fill="#111"/><circle cx="972.6" cy="77.5" r="21.000000000000004" stroke="#FF7A2F" stroke-width="5"/><rect x="858" y="134" width="40" height="5" rx="2" fill="#FF7A2F"/></g>
+  <g style="animation:float 7s 0.6s ease-in-out infinite"><rect x="1020" y="10" width="180" height="130" fill="#FFFFFF" stroke="#E5E9F0"/><rect x="1034" y="24" width="54" height="7" rx="2" fill="#C9D3E0"/><rect x="1034" y="40" width="32.4" height="20" rx="3" fill="#E8EEF6"/><rect x="1073.6" y="40" width="32.4" height="20" rx="3" fill="#E8EEF6"/><rect x="1113.2" y="40" width="32.4" height="20" rx="3" fill="#E8EEF6"/><circle cx="1070.4" cy="102" r="22" stroke="#C3B5FF" stroke-width="7"/><path d="M1110 122 q20 -30 40 -12 t40 -18" stroke="#8FB8FF" stroke-width="3"/></g>
+  <g style="animation:float 7s 2s ease-in-out infinite"><rect x="650" y="150" width="180" height="160" fill="#2B2F36" stroke="#3A3F47"/><text x="668" y="184" font-size="13" font-weight="700" fill="#F2F2F2">Weekly</text><text x="668" y="200" font-size="13" font-weight="700" fill="#F2F2F2">Revenue</text><rect x="725.6" y="190" width="28.8" height="80" rx="4" fill="#111"/><circle cx="790.4" cy="222" r="22.400000000000002" stroke="#FF7A2F" stroke-width="5"/><rect x="668" y="284" width="40" height="5" rx="2" fill="#FF7A2F"/></g>
+  <g style="animation:float 7s 0.9s ease-in-out infinite"><rect x="840" y="170" width="170" height="340" fill="#2B2F36" stroke="#3A3F47"/><rect x="892" y="260" width="66" height="134" rx="12" fill="#1B1E23" stroke="#4A4F57" stroke-width="2"/><rect x="899" y="276" width="52" height="30" rx="5" fill="#8BE3CF"/><rect x="899" y="312" width="24" height="20" rx="4" fill="#3A3F47"/><rect x="927" y="312" width="24" height="20" rx="4" fill="#3A3F47"/><rect x="899" y="338" width="52" height="16" rx="4" fill="#2E333B"/><rect x="899" y="360" width="52" height="16" rx="4" fill="#2E333B"/></g>
+  <g style="animation:float 7s 1.6s ease-in-out infinite"><rect x="1020" y="150" width="180" height="160" fill="#2B2F36" stroke="#3A3F47"/><text x="1038" y="184" font-size="13" font-weight="700" fill="#F2F2F2">Weekly</text><text x="1038" y="200" font-size="13" font-weight="700" fill="#F2F2F2">Revenue</text><rect x="1095.6" y="190" width="28.8" height="80" rx="4" fill="#111"/><circle cx="1160.4" cy="222" r="22.400000000000002" stroke="#FF7A2F" stroke-width="5"/><rect x="1038" y="284" width="40" height="5" rx="2" fill="#FF7A2F"/></g>
+  <g style="animation:float 7s 2.4s ease-in-out infinite"><rect x="650" y="320" width="180" height="190" fill="#2B2F36" stroke="#3A3F47"/><rect x="707" y="348" width="66" height="134" rx="12" fill="#1B1E23" stroke="#4A4F57" stroke-width="2"/><rect x="714" y="364" width="52" height="30" rx="5" fill="#8BE3CF"/><rect x="714" y="400" width="24" height="20" rx="4" fill="#3A3F47"/><rect x="742" y="400" width="24" height="20" rx="4" fill="#3A3F47"/><rect x="714" y="426" width="52" height="16" rx="4" fill="#2E333B"/><rect x="714" y="448" width="52" height="16" rx="4" fill="#2E333B"/></g>
+  <g style="animation:float 7s 0.3s ease-in-out infinite"><rect x="1020" y="320" width="180" height="190" fill="#2B2F36" stroke="#3A3F47"/><rect x="1077" y="348" width="66" height="134" rx="12" fill="#1B1E23" stroke="#4A4F57" stroke-width="2"/><rect x="1084" y="364" width="52" height="30" rx="5" fill="#8BE3CF"/><rect x="1084" y="400" width="24" height="20" rx="4" fill="#3A3F47"/><rect x="1112" y="400" width="24" height="20" rx="4" fill="#3A3F47"/><rect x="1084" y="426" width="52" height="16" rx="4" fill="#2E333B"/><rect x="1084" y="448" width="52" height="16" rx="4" fill="#2E333B"/></g>
+</g>
+</svg>
