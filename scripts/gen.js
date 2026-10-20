@@ -66,22 +66,15 @@ const btn = (x, y, txt, solid, w = 0) => {
 };
 const shineDef = `<linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/><animateTransform attributeName="gradientTransform" type="translate" values="-1.2 0;1.2 0" dur="3.4s" repeatCount="indefinite"/></linearGradient>`;
 
-// the Leukode mark: ring open on the right, disc with "L", three circuit traces with nodes
-const logo = (cx, cy, s, live) => {
-  const k = s / 100, P = (x, y) => `${(cx + (x - 70) * k).toFixed(1)} ${(cy + (y - 80) * k).toFixed(1)}`;
-  const traces = [`M${P(118, 56)} L${P(140, 56)} L${P(152, 44)} L${P(166, 44)}`, `M${P(124, 80)} L${P(176, 80)}`, `M${P(118, 104)} L${P(140, 104)} L${P(152, 116)} L${P(166, 116)}`];
-  return `<circle cx="${cx}" cy="${cy}" r="${66 * k}" stroke="#1E63B8" stroke-width="${12 * k}" stroke-dasharray="${330 * k} ${85 * k}" stroke-linecap="round" transform="rotate(35 ${cx} ${cy})"/>
-  <circle cx="${cx}" cy="${cy}" r="${46 * k}" fill="url(#disc)"/>
-  <path d="M${P(56, 54)} L${P(66, 54)} L${P(66, 98)} L${P(90, 98)} L${P(90, 108)} L${P(56, 108)} Z" fill="#DCEBFA"/>
-  ${traces.map((d, i) => `<path d="${d}" stroke="#1E63B8" stroke-width="${9 * k}" stroke-linecap="round" stroke-linejoin="round"${live ? ` stroke-dasharray="${120 * k}" style="animation:draw 1.2s ${.6 + i * .2}s cubic-bezier(.6,0,.2,1) both"` : ''}/>`).join('')}
-  ${[[174, 44], [184, 80], [174, 116]].map(([x, y]) => { const [a, b] = P(x, y).split(' '); return `<circle cx="${a}" cy="${b}" r="${8 * k}" stroke="#1E63B8" stroke-width="${6 * k}" fill="${C.bg}"/>`; }).join('')}`;
-};
-const discDef = `<linearGradient id="disc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B83E0"/><stop offset="1" stop-color="#0D3F8F"/></linearGradient>`;
+// the official logo, embedded as data so GitHub can show it inside the SVG
+const LOGO = 'data:image/png;base64,' + fs.readFileSync(path.join(OUT, '..', 'assets-src', 'logo.png')).toString('base64');
+const logoImg = (x, y, h) => `<image href="${LOGO}" x="${x}" y="${y}" width="${(h * 190 / 147).toFixed(1)}" height="${h}" preserveAspectRatio="xMidYMid meet"/>`;
+
 
 const navBar = (w) => `
   <g class="f">
-    ${logo(44, 42, 15, true)}
-    <text x="74" y="49" font-size="18" font-weight="700" class="w">Leukode Labs</text>
+    ${logoImg(24, 24, 36)}
+    <text x="78" y="49" font-size="18" font-weight="700" class="w">Leukode Labs</text>
     ${[['About', 596], ['Services', 678], ['Site Check', 786], ['Pages', 908]].map(([t, x]) => `<text x="${x - 1200 + w}" y="47" class="cap g">${t}</text>`).join('')}
     <path d="M${w - 236} 41 l4 4 l4 -4" stroke="${C.gray}" stroke-width="1.6" fill="none"/>
     <line x1="${w - 190}" y1="28" x2="${w - 190}" y2="56" stroke="${C.line}"/>
@@ -111,7 +104,7 @@ const navBar = (w) => `
   <g class="r" style="animation-delay:.9s">${btn(452, 540, 'Book a Call', true, 136)}${btn(604, 540, 'View Our Work', false, 152)}</g>`;
   fs.writeFileSync(path.join(OUT, 'hero.svg'), svg(W, H, body, {
     css: '@keyframes draw{from{stroke-dashoffset:' + (120 * .15).toFixed(1) + '}to{stroke-dashoffset:0}}',
-    defs: shineDef + discDef + `<radialGradient id="vig" cx=".5" cy=".47" r=".7"><stop offset="0" stop-color="${C.bg}" stop-opacity=".2"/><stop offset=".55" stop-color="${C.bg}" stop-opacity=".55"/><stop offset="1" stop-color="${C.bg}" stop-opacity=".95"/></radialGradient>
+    defs: shineDef + `<radialGradient id="vig" cx=".5" cy=".47" r=".7"><stop offset="0" stop-color="${C.bg}" stop-opacity=".2"/><stop offset=".55" stop-color="${C.bg}" stop-opacity=".55"/><stop offset="1" stop-color="${C.bg}" stop-opacity=".95"/></radialGradient>
     <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${C.bg}" stop-opacity=".85"/><stop offset=".25" stop-color="${C.bg}" stop-opacity=".2"/><stop offset=".8" stop-color="${C.bg}" stop-opacity=".2"/><stop offset="1" stop-color="${C.bg}"/></linearGradient>`
   }));
 }
@@ -366,8 +359,8 @@ projects.forEach(([file, type, name, desc, cs, kind], i) => {
   <rect width="${W}" height="${H}" fill="url(#footG)"/>
   <line x1="0" y1="0" x2="${W}" y2="0" stroke="url(#brand)" stroke-opacity=".5"/>
   <g class="r" style="animation-delay:.1s">
-    ${logo(82, 86, 20, false)}
-    <text x="118" y="93" font-size="19" font-weight="700" class="w">Leukode Labs</text>
+    ${logoImg(64, 64, 42)}
+    <text x="126" y="93" font-size="19" font-weight="700" class="w">Leukode Labs</text>
     <text x="64" y="138" font-size="15" class="m">Engineering comfort through intelligent digital</text>
     <text x="64" y="160" font-size="15" class="m">systems that remove operational friction.</text>
     ${[0, 1, 2, 3, 4].map(i => `<rect x="${64 + i * 40}" y="186" width="30" height="30" rx="2" fill="rgba(255,255,255,.04)" stroke="${C.line2}"/>`).join('')}
@@ -384,7 +377,7 @@ projects.forEach(([file, type, name, desc, cs, kind], i) => {
   <text x="64" y="${H - 20}" font-size="13" class="m">© ${new Date().getFullYear()} Leukode Labs. All rights reserved.</text>
   <text x="${W - 64}" y="${H - 20}" font-size="13" text-anchor="end" class="m">Engineered for Comfort. Built for Scale.</text>`;
   fs.writeFileSync(path.join(OUT, 'footer.svg'), svg(W, H, body, {
-    defs: discDef + `<linearGradient id="footG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A1628"/><stop offset="1" stop-color="${C.bg}"/></linearGradient>
+    defs: `<linearGradient id="footG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A1628"/><stop offset="1" stop-color="${C.bg}"/></linearGradient>
     <linearGradient id="wm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1E3A5F" stop-opacity=".7"/><stop offset="1" stop-color="#1E3A5F" stop-opacity=".05"/></linearGradient>`
   }));
 }
